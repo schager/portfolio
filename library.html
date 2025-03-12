@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>June's Library</title>
+    <link rel="stylesheet" href="library.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <img src="images/ZSlogo.png" class="logo">
+        <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about_me.html">About Me</a>
+        <a href="resume.html">Resume</a>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+        </nav>
+
+
+    <main>
+    <!-- Header Section -->
+    <header class="header">
+        <h1>June's Library</h1>
+    </header>
+
+  <!-- Information Section -->
+  <header class="information">
+    <p>Welcome to our digital library! This site is a resource for readers to find new books and hear from other like-minded readers. We aim to help readers try something new and find a book they don't already have on their shelf. This site is for fiction readers and fans of romance!</p>
+</header>
+
+    <!-- Sign up -->
+    <section class="sign-up">
+        <h2>Thank goodness for books!</h2>
+        <p>We hope our ratings can help you find the perfect title for you. Sign up to get updates when we add more to our library.</p>
+        <button onclick="document.getElementById('signup-form').style.display='block'">Sign Me Up!</button>
+        <div id="signup-form" class="form-popup">
+            <form class="form-container">
+                <h2>Sign up to get updates from us</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required> 
+                
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="document.getElementById('signup-form').style.display='none'">Close</button>
+            </form>
+        </div>
+    </section>
+
+ <!-- Books Section -->
+ <section class="books">
+    <h2>Our Titles</h2>
+    <div class="books-grid">
+        <article class="book">
+            <img src="images/once-upon-a-broken-heart.jpeg" alt="Once Upon A Broken Heart">
+            <div class="book-info">
+                <h3>Once Upon a Broken Heart</h3>
+                <h4>Stephanie Garber</h4>
+                <h5>4.5☆</h5>
+                <p>This was a very fun and magical read. This book doesn't take itself too seriously and has well-developed characters and world building.</p>
+                <a href="https://www.goodreads.com/book/show/55987278-once-upon-a-broken-heart">Find this book on Goodreads</a>
+            </div>
+        </article>
+        <article class="book">
+            <img src="images/everything,everything.jpg" alt="Everything, Everything">
+            <div class="book-info">
+                <h3>Everything, Everything</h3>
+                <h4>Nicola Yoon</h4>
+                <h5>4.5☆</h5>
+                <p>This book will take you on an emotional rollercoaster but I could not recommend it enough. It offers a very unique perspective on life and also tells a very sweet love story.</p>
+                <a href="https://www.goodreads.com/book/show/18692431-everything-everything">Find this book on Goodreads</a>
+            </div>
+        </article>
+        <article class="book">
+            <img src="images/the-sun-is-also-a-star.jpg" alt="The Sun Is Also a Star">
+            <div class="book-info">
+                <h3>The Sun Is Also a Star</h3>
+                <h4>Nicola Yoon</h4>
+                <h5>4☆</h5>
+                <p>Although this book isn't a mystery, the story unravels and reveals itself to the reader through many characters perspectives. It's a really fun read and I find myself coming back to it often.</p>
+                <a href="https://www.goodreads.com/book/show/28763485-the-sun-is-also-a-star?ref=nav_sb_ss_1_22">Find this book on Goodreads</a>
+            </div>
+        </article>
+        <article class="book">
+            <img src="images/shatter-me.jpeg" alt="Shatter Me">
+            <div class="book-info">
+                <h3>Shatter Me</h3>
+                <h4>Tahereh Mafi</h4>
+                <h5>3.5☆</h5>
+                <p>This is the first of a 6-book series. The book follows a girl with supernatural powers in a dystopian society. Although I prefer the later books in this series, this first book sets the tone well.</p>
+                <a href="https://www.goodreads.com/book/show/10429045-shatter-me?from_search=true&from_srp=true&qid=exULc7yyfN&rank=1">Find this book on Goodreads</a>
+            </div>
+        </article>
+        <article class="book">
+            <img src="images/malibu-rising.jpg" alt="Malibu Rising">
+            <div class="book-info">
+                <h3>Malibu Rising</h3>
+                <h4>Taylor Jenkins Reid</h4>
+                <h5>4.5☆</h5>
+                <p>True to this author's reputation, this book is very complex with characters and storylines. I felt fully immersed in the beachy culture of Malibu in the 60s as well as the high-class culture of the 80s.</p>
+                <a href="https://www.goodreads.com/book/show/55404546-malibu-rising?ref=nav_sb_ss_1_13">Find this book on Goodreads</a>
+            </div>
+        </article>
+        <article class="book">
+            <img src="images/love-and-other-words.jpeg" alt="Love and Other Words">
+            <div class="book-info">
+                <h3>Love and Other Words</h3>
+                <h4>Christina Lauren</h4>
+                <h5>5☆</h5>
+                <p>This book is so sweet and highlights the experience of young love. All of the character relationships in the book feel so meaningful and they are what drive the book.</p>
+                <a href="https://www.goodreads.com/book/show/36206591-love-and-other-words?ref=nav_sb_ss_1_20">Find this book on Goodreads</a>
+            </div>
+        </article>
+        <article class="book">
+            <img src="images/cruel-prince.jpg" alt="The Cruel Prince">
+            <div class="book-info">
+                <h3>The Cruel Prince</h3>
+                <h4>Holly Black</h4>
+                <h5>4☆</h5>
+                <p>This book follows the story of a human girl growing up in a mystical land of fairies and mythological creatures. It's a great introduction to fantasy for readers who want to try out the genre.</p>
+                <a href="https://www.goodreads.com/book/show/26032825-the-cruel-prince?ref=nav_sb_ss_1_16">Find this book on Goodreads</a>
+            </div>
+        </article>
+        <article class="book">
+            <img src="images/powerless.jpg" alt="Powerless">
+            <div class="book-info">
+                <h3>Powerless</h3>
+                <h4>Lauren Roberts</h4>
+                <h5>3.5☆</h5>
+                <p>This book is another great introduction to the fantasy genre. The dystopian world-building is easy to follow and the book keeps you on the edge of your seat from beginning to end.</p>
+                <a href="https://www.goodreads.com/book/show/75513900-powerless?ref=nav_sb_ss_1_9">Find this book on Goodreads</a>
+            </div>
+        </article>
+    </div>
+</section>
+  
+    <!-- Shopping -->
+    <section class="book-shopping">
+        <h2>Where to Buy Books</h2>
+        <div class="websites-grid">
+            <article class="sites">
+                    <h3>Amazon</h3>
+                    <p>Amazon can be great for finding deals and getting your books fast.</p>
+                    <a href="https://www.amazon.com/">Amazon.com</a>
+            </article>
+            <article class="sites">
+                <h3>Barnes & Noble</h3>
+                <p>Barnes & Noble is a reliable bookseller who you can trust to deliver high-quality copies of any book you are looking for.</p>
+                <a href="https://www.barnesandnoble.com/">Barnesandnoble.com</a>
+            </article>
+            <article class="sites">
+                <h3>Go Local!</h3>
+                <p>Shopping local is a great options to support small businesses near you. If you live near Portland, Powells is a great choice.</p>
+                <a href="https://www.powells.com/?srsltid=AfmBOorUgXKwwguyQ_MU44mvceG4A-WypdBenMIE-PDfl185wLVJibET">Powells.com</a>
+            </article>
+            <article class="sites">
+                <h3>Target</h3>
+                <p>Target is a great place to find deals on books, especially if you shop online.</p>
+                <a href="https://www.target.com/">Target.com</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Recommendations section -->
+    <section class="feedback">
+        <h2>We'd love to hear your feedback!</h2>
+        <p>We want to provide you with the best experience. If you had any issues with our site let us know here! This is also a great place to send suggestions for books that you would like to see added to our collection.</p>
+        <button onclick="document.getElementById('feedback-form').style.display='block'">Feedback</button>
+        <div id="feedback-form" class="feedback-popup">
+            <form class="form-container">
+                <h2>Tell us about your experience</h2>
+                <label for="name">Name:</label>
+                <input type= "text" id="fullname" name="fullname" placeholder="Enter your name" required>
+                <label for="text">Feedback:</label>
+                <input type="text" id="text" name="text" placeholder="What's on your mind?" required> 
+                
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn cancel" onclick="document.getElementById('feedback-form').style.display='none'">Close</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 June's Library | All Rights Reserved | Images sourced from Google Images</p>
+    </footer>
+    </main>
+</body>
+</html>
